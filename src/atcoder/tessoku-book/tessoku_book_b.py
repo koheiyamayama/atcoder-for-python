@@ -1,12 +1,13 @@
-# TODO edit this code, this code is for https://atcoder.jp/contests/practice/tasks/practice_1
-
 # param
-a = int(input())
 b, c = map(int, input().split())
-s = input()
+a = map(int, input().split())
 
-# solve
-ans = a + b + c
+ans = False
+for i in a:
+    if i == c:
+        ans = True
 
-# answer
-print("{} {}".format(ans, s))
+if ans:
+    print("Yes")
+else:
+    print("No")
